@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./calculator.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+<body>
+    
+    <div class="row">
+    <div class="col-4"></div>
+    <div class="col-4 mt-2">
+        <h3>CALCULATOR</h3>  
+        <div class="div1">
+            <input type="text" id="result" class="form-control">
+            <div class="num mt-2">
+                <div>
+                <div><button id="7" onclick="displayNum(7)" type="button" class="btn btn-info">7</button></div>
+                <div><button id="8" onclick="displayNum(8)" type="button" class="btn btn-info">8</button></div>
+                <div><button id="9" onclick="displayNum(9)" type="button" class="btn btn-info">9</button></div>
+                <div><button id="&#247" onclick="displayNum('/')" type="button" class="btn btn-info">&#247</button></div>
+            </div>
+            <div class="numz mt-3">
+                <div><button id="4" onclick="displayNum(4)" type="button" class="btn btn-info">4</button></div>
+                <div><button id="5" onclick="displayNum(5)" type="button" class="btn btn-info">5</button></div>
+                <div><button id="6" onclick="displayNum(6)" type="button" class="btn btn-info">6</button></div>
+                <div><button id="&#215" onclick="displayNum('*')" type="button" class="btn btn-info">&#215</button></div>
+            </div>
+            <div class="numz mt-3">
+                <div><button id="1" onclick="displayNum(1)" type="button" class="btn btn-info">1</button></div>
+                <div><button id="2" onclick="displayNum(2)" type="button" class="btn btn-info">2</button></div>
+                <div><button id="3" onclick="displayNum(3)" type="button" class="btn btn-info">3</button></div>
+                <div><button id="&#8722" onclick="displayNum('-')" type="button" class="btn btn-info">&#8722</button></div>
+            </div>
+            <div class="numz mt-3">
+                <div><button id="C" onclick="clearBox()" type="button" class="btn btn-info">C</button></div>
+                <div><button id="0" onclick="displayNum(0)" type="button" class="btn btn-info">0</button></div>
+                <div><button id="&#61" onclick="evaluateExp()" type="button" class="btn btn-info">&#61</button></div>
+                <div><button id="&#43" onclick="displayNum('+')" type="button" class="btn btn-info">&#43</button></div>
+                <div><button id="clear" onclick="removeItem()" type="button" class="btn btn-info mt-2">&#8592</button></div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+    <div class="col-4"></div>
+        </div>
+</body>
+
+<script src="/calculator.js"></script>
+
+</html>
